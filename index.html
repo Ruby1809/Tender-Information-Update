@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#00A86B">
+<meta name="theme-color" content="#3A5CAA">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="MMH Tender">
@@ -30,7 +30,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
-:root{--mani-primary:#00A86B;--mani-primary-dark:#007A4D;--mani-primary-light:#4DCC9C;--mani-primary-bg:rgba(0,168,107,0.08);--mani-primary-bg-2:rgba(0,168,107,0.16);--mani-secondary:#2E5C8A;--c-success:#00A86B;--c-success-bg:rgba(0,168,107,0.10);--c-warning:#F59E0B;--c-warning-bg:rgba(245,158,11,0.12);--c-info:#3B82F6;--c-info-bg:rgba(59,130,246,0.12);--c-danger:#DC2626;--c-danger-bg:rgba(220,38,38,0.12);--c-purple:#8B5CF6;--c-purple-bg:rgba(139,92,246,0.12);--font-sans:'Be Vietnam Pro',system-ui,-apple-system,sans-serif;--font-mono:'JetBrains Mono','Courier New',monospace;--s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:20px;--s-6:24px;--s-8:32px;--s-10:40px;--s-12:48px;--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;--r-2xl:28px;--r-full:9999px;--ease:cubic-bezier(0.16,1,0.3,1);--ease-spring:cubic-bezier(0.5,1.4,0.5,1);--d-fast:150ms;--d-base:250ms;--d-slow:400ms;--shadow-xs:0 1px 2px rgba(15,23,42,0.04);--shadow-sm:0 2px 4px rgba(15,23,42,0.06);--shadow-md:0 4px 12px rgba(15,23,42,0.08);--shadow-lg:0 12px 32px rgba(15,23,42,0.12);--shadow-xl:0 24px 48px rgba(15,23,42,0.18);--glow-primary:0 0 0 4px rgba(0,168,107,0.15)}
+:root{--mani-primary:#3A5CAA;--mani-primary-dark:#2A4480;--mani-primary-light:#7090C8;--mani-primary-bg:rgba(58,92,170,0.08);--mani-primary-bg-2:rgba(58,92,170,0.16);--mani-yellow:#FFE100;--mani-yellow-dark:#D4BD00;--mani-yellow-bg:rgba(255,225,0,0.16);--mani-secondary:#0E2F5F;--c-success:#00A86B;--c-success-bg:rgba(0,168,107,0.10);--c-warning:#F59E0B;--c-warning-bg:rgba(245,158,11,0.12);--c-info:#3B82F6;--c-info-bg:rgba(59,130,246,0.12);--c-danger:#DC2626;--c-danger-bg:rgba(220,38,38,0.12);--c-purple:#8B5CF6;--c-purple-bg:rgba(139,92,246,0.12);--font-sans:'Be Vietnam Pro',system-ui,-apple-system,sans-serif;--font-mono:'JetBrains Mono','Courier New',monospace;--s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:20px;--s-6:24px;--s-8:32px;--s-10:40px;--s-12:48px;--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;--r-2xl:28px;--r-full:9999px;--ease:cubic-bezier(0.16,1,0.3,1);--ease-spring:cubic-bezier(0.5,1.4,0.5,1);--d-fast:150ms;--d-base:250ms;--d-slow:400ms;--shadow-xs:0 1px 2px rgba(15,23,42,0.04);--shadow-sm:0 2px 4px rgba(15,23,42,0.06);--shadow-md:0 4px 12px rgba(15,23,42,0.08);--shadow-lg:0 12px 32px rgba(15,23,42,0.12);--shadow-xl:0 24px 48px rgba(15,23,42,0.18);--glow-primary:0 0 0 4px rgba(58,92,170,0.15)}
 [data-theme="light"]{--bg:#F7F9FB;--bg-mesh:radial-gradient(at 20% 20%,rgba(0,168,107,0.06) 0px,transparent 50%),radial-gradient(at 80% 0%,rgba(46,92,138,0.04) 0px,transparent 50%);--surface:#FFFFFF;--surface-2:#F1F5F9;--surface-3:#E2E8F0;--surface-glass:rgba(255,255,255,0.78);--border:#E2E8F0;--border-strong:#CBD5E1;--text:#0F172A;--text-secondary:#475569;--text-muted:#94A3B8;--chart-grid:rgba(15,23,42,0.06);--chart-text:#64748B}
 [data-theme="dark"]{--bg:#08101F;--bg-mesh:radial-gradient(at 20% 20%,rgba(0,168,107,0.10) 0px,transparent 50%),radial-gradient(at 80% 0%,rgba(46,92,138,0.10) 0px,transparent 50%);--surface:#131C2E;--surface-2:#1B263F;--surface-3:#243150;--surface-glass:rgba(19,28,46,0.75);--border:rgba(255,255,255,0.08);--border-strong:rgba(255,255,255,0.16);--text:#F1F5F9;--text-secondary:#CBD5E1;--text-muted:#94A3B8;--chart-grid:rgba(255,255,255,0.06);--chart-text:#94A3B8}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -464,18 +464,13 @@ tbody tr.is-new td{background:rgba(0,168,107,0.06)}
         <div class="login-brand-product">Tender Intelligence</div>
       </div>
     </div>
-    <h1 class="login-title">Chào mừng trở lại</h1>
-    <p class="login-subtitle">Đăng nhập để truy cập dashboard thông tin thầu y tế Việt Nam</p>
-    <div class="login-field">
-      <label class="login-label">Email</label>
-      <input class="login-input" id="login-email" type="email" placeholder="email@example.com" value="nguyen@manimedicalhanoi.com" onkeydown="if(event.key==='Enter')doLogin()">
-    </div>
-    <div class="login-field">
-      <label class="login-label">Mật khẩu</label>
-      <input class="login-input" id="login-pass" type="password" placeholder="••••••••" value="demo2026" onkeydown="if(event.key==='Enter')doLogin()">
-    </div>
-    <button class="login-btn" onclick="doLogin()">Đăng nhập</button>
-    <div class="login-hint">v3.4 · Cache + tải nhanh · Đã kết nối sẵn data</div>
+    <h1 class="login-title">Hệ thống thông tin thầu y tế</h1>
+    <p class="login-subtitle">Realtime tracking từ Google Sheets · KQDT · TBMT · KHMT</p>
+    <button class="login-btn" onclick="doLogin()" style="margin-top:var(--s-5)">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;margin-right:8px"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      Vào hệ thống
+    </button>
+    <div class="login-hint">v3.5 · MMH Brand · Realtime Dashboard</div>
   </div>
 </div>
 
@@ -612,6 +607,107 @@ tbody tr.is-new td{background:rgba(0,168,107,0.06)}
           <div class="card"><div class="card-header"><div><div class="card-title"><span class="card-title-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>Top 10 Nhà thầu trúng</div><div class="card-subtitle">Click vào cột để xem chi tiết · <span id="chart-vendor-mode">Theo giá trị trúng thầu</span></div></div></div><div class="chart-canvas-wrap"><canvas id="chart-vendor"></canvas></div></div>
         </div>
 
+        <!-- ============== DASHBOARD NÂNG CAO v3.5 ============== -->
+        <div class="card" style="background:linear-gradient(135deg,#FFE100 0%,rgba(255,225,0,0.3) 100%);border:1px solid rgba(255,225,0,0.6);margin-top:var(--s-6)">
+          <div style="display:flex;align-items:center;gap:var(--s-3);flex-wrap:wrap">
+            <div style="width:42px;height:42px;background:#3A5CAA;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:#FFE100;flex-shrink:0">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
+            </div>
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:16px;font-weight:800;color:#0E2F5F;letter-spacing:-0.02em">Phân tích thị trường thầu y tế chuyên sâu</div>
+              <div style="font-size:12px;color:#0E2F5F;font-weight:600;margin-top:2px">Realtime từ KQDT · Phân loại theo loại chủ đầu tư · Thống kê từ khoá tên gói thầu · Insight tự động</div>
+            </div>
+            <div id="adv-period-info" style="font-size:11.5px;color:#0E2F5F;font-weight:700;background:rgba(255,255,255,0.7);padding:6px 12px;border-radius:var(--r-md)">—</div>
+          </div>
+        </div>
+
+        <!-- KPI Row nâng cao -->
+        <div class="kpi-grid" style="margin-top:var(--s-4)">
+          <div class="kpi-card" style="--kpi-c:#3A5CAA;--kpi-bg:rgba(58,92,170,0.10)"><div class="kpi-accent"></div><div class="kpi-header"><div class="kpi-label">Tỉ lệ tiết kiệm TB</div><div class="kpi-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/></svg></div></div><div class="kpi-value" id="kpi-saving">0%</div><div class="kpi-meta" id="kpi-saving-insight">—</div></div>
+          <div class="kpi-card" style="--kpi-c:#FFE100;--kpi-bg:rgba(255,225,0,0.16)"><div class="kpi-accent" style="background:#FFE100"></div><div class="kpi-header"><div class="kpi-label">Chủ đầu tư (unique)</div><div class="kpi-icon" style="color:#FFE100;background:#0E2F5F"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l7-3 7 3z"/></svg></div></div><div class="kpi-value" id="kpi-investors">0</div><div class="kpi-meta" id="kpi-investors-insight">—</div></div>
+          <div class="kpi-card" style="--kpi-c:#0E2F5F;--kpi-bg:rgba(14,47,95,0.10)"><div class="kpi-accent" style="background:#0E2F5F"></div><div class="kpi-header"><div class="kpi-label">Nhà thầu (unique)</div><div class="kpi-icon" style="color:#0E2F5F;background:rgba(14,47,95,0.10)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div></div><div class="kpi-value" id="kpi-vendors">0</div><div class="kpi-meta" id="kpi-vendors-insight">—</div></div>
+          <div class="kpi-card" style="--kpi-c:#00A86B;--kpi-bg:rgba(0,168,107,0.10)"><div class="kpi-accent" style="background:#00A86B"></div><div class="kpi-header"><div class="kpi-label">Giá trị tiết kiệm</div><div class="kpi-icon" style="color:#00A86B;background:rgba(0,168,107,0.10)"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></div></div><div class="kpi-value" id="kpi-saving-value">0</div><div class="kpi-meta" id="kpi-saving-value-insight">—</div></div>
+        </div>
+
+        <!-- Phân loại chủ đầu tư + Hình thức lựa chọn detail -->
+        <div class="chart-row cols-2-eq" style="margin-top:var(--s-5)">
+          <div class="card">
+            <div class="card-header"><div><div class="card-title"><span class="card-title-icon" style="background:rgba(58,92,170,0.10);color:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg></span>Phân bổ theo Loại chủ đầu tư</div><div class="card-subtitle">Bệnh viện · TTYT · CDC · Sở Y tế · Khác · Click cột để drill-down</div></div></div>
+            <div class="chart-canvas-wrap"><canvas id="chart-investor-type"></canvas></div>
+            <div id="investor-type-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:#FFE100;border-left:3px solid #3A5CAA;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+          </div>
+          <div class="card">
+            <div class="card-header"><div><div class="card-title"><span class="card-title-icon" style="background:rgba(58,92,170,0.10);color:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 4"/></svg></span>Hình thức lựa chọn — Giá trị & Tỉ lệ tiết kiệm</div><div class="card-subtitle">Stacked: Giá gói (xanh đậm) · Giá trúng (vàng) · Tiết kiệm (đỏ)</div></div></div>
+            <div class="chart-canvas-wrap"><canvas id="chart-method-detail"></canvas></div>
+            <div id="method-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:rgba(58,92,170,0.08);border-left:3px solid #3A5CAA;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+          </div>
+        </div>
+
+        <!-- Top 10 Chủ đầu tư theo từng loại -->
+        <div class="card" style="margin-top:var(--s-5)">
+          <div class="card-header" style="margin-bottom:var(--s-4)">
+            <div><div class="card-title"><span class="card-title-icon" style="background:#FFE100;color:#0E2F5F"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l7-3 7 3z"/></svg></span>Top 10 Chủ đầu tư theo Loại</div><div class="card-subtitle">Chuyển tab để xem theo từng loại · Hiển thị tỉ trọng hình thức mua sắm</div></div>
+            <div class="btn-tabs" id="invtype-tabs">
+              <button class="btn-tab active" data-itype="benhvien" onclick="setInvTypeTab('benhvien')">Bệnh viện</button>
+              <button class="btn-tab" data-itype="ttyt" onclick="setInvTypeTab('ttyt')">Trung tâm Y tế</button>
+              <button class="btn-tab" data-itype="cdc" onclick="setInvTypeTab('cdc')">CDC</button>
+              <button class="btn-tab" data-itype="soyte" onclick="setInvTypeTab('soyte')">Sở Y tế</button>
+              <button class="btn-tab" data-itype="khac" onclick="setInvTypeTab('khac')">Khác</button>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s-4)">
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#3A5CAA;margin-bottom:var(--s-2)">Top 10 chủ đầu tư — Số gói & Giá trị</div>
+              <div class="chart-canvas-wrap"><canvas id="chart-top-investor-by-type"></canvas></div>
+            </div>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#3A5CAA;margin-bottom:var(--s-2)">Tỉ trọng hình thức lựa chọn nhà thầu</div>
+              <div class="chart-canvas-wrap"><canvas id="chart-method-by-type"></canvas></div>
+            </div>
+          </div>
+          <div id="invtype-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:#FFE100;border-left:3px solid #3A5CAA;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+        </div>
+
+        <!-- Top 10 Nhà thầu theo loại chủ đầu tư -->
+        <div class="card" style="margin-top:var(--s-5)">
+          <div class="card-header" style="margin-bottom:var(--s-4)">
+            <div><div class="card-title"><span class="card-title-icon" style="background:#0E2F5F;color:#FFE100"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></span>Top 10 Nhà thầu theo Loại chủ đầu tư</div><div class="card-subtitle">Số gói trúng & Giá trị trúng theo từng loại khách hàng</div></div>
+            <div class="btn-tabs" id="vendortype-tabs">
+              <button class="btn-tab active" data-vtype="benhvien" onclick="setVendorTypeTab('benhvien')">Bệnh viện</button>
+              <button class="btn-tab" data-vtype="ttyt" onclick="setVendorTypeTab('ttyt')">TTYT</button>
+              <button class="btn-tab" data-vtype="cdc" onclick="setVendorTypeTab('cdc')">CDC</button>
+              <button class="btn-tab" data-vtype="soyte" onclick="setVendorTypeTab('soyte')">Sở Y tế</button>
+              <button class="btn-tab" data-vtype="khac" onclick="setVendorTypeTab('khac')">Khác</button>
+            </div>
+          </div>
+          <div class="chart-canvas-wrap" style="height:380px"><canvas id="chart-top-vendor-by-type"></canvas></div>
+          <div id="vendortype-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:rgba(14,47,95,0.06);border-left:3px solid #0E2F5F;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+        </div>
+
+        <!-- Phân tích từ khóa tên gói thầu -->
+        <div class="card" style="margin-top:var(--s-5)">
+          <div class="card-header" style="margin-bottom:var(--s-4)">
+            <div><div class="card-title"><span class="card-title-icon" style="background:#FFE100;color:#0E2F5F"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>Phân tích Tên gói thầu theo Từ khoá chuyên ngành</div><div class="card-subtitle">Nhãn khoa · Nha khoa · Vật tư · Chấn thương / Phẫu thuật · Cột sống / Sọ não</div></div>
+          </div>
+          <div id="kw-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--s-3)"></div>
+          <div style="margin-top:var(--s-4);display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <input class="field-input" id="custom-kw-input" placeholder="VD: phẫu thuật nội soi, máy thở..." style="flex:1;min-width:200px;font-size:12.5px" onkeydown="if(event.key==='Enter')addCustomKW()">
+            <button class="btn btn-primary btn-sm" onclick="addCustomKW()" style="background:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>Thêm từ khoá</button>
+            <button class="btn btn-ghost btn-sm" onclick="resetCustomKW()">Reset về mặc định</button>
+          </div>
+          <div id="kw-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:#FFE100;border-left:3px solid #3A5CAA;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+        </div>
+
+        <!-- Hình thức lựa chọn theo từ khoá -->
+        <div class="card" style="margin-top:var(--s-5)">
+          <div class="card-header" style="margin-bottom:var(--s-4)">
+            <div><div class="card-title"><span class="card-title-icon" style="background:rgba(58,92,170,0.10);color:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 4"/></svg></span>Hình thức lựa chọn theo Từ khoá</div><div class="card-subtitle">Mỗi từ khoá → phân bổ hình thức (Đấu thầu rộng rãi, Chỉ định, Chào giá trực tuyến...)</div></div>
+            <select class="field-select" id="kw-method-select" style="max-width:200px" onchange="renderKeywordMethodChart()"></select>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="chart-kw-method"></canvas></div>
+          <div id="kw-method-insight" style="margin-top:var(--s-3);padding:var(--s-3);background:rgba(58,92,170,0.08);border-left:3px solid #3A5CAA;border-radius:0 var(--r-md) var(--r-md) 0;font-size:12px;line-height:1.6;color:#0E2F5F;font-weight:500">—</div>
+        </div>
+
         <div class="card" style="display:flex;align-items:center;gap:var(--s-3);flex-wrap:wrap;justify-content:space-between">
           <div><div class="card-title">📊 Xuất báo cáo dashboard</div><div class="card-subtitle">PDF (tiếng Việt đầy đủ) · Excel · Email kèm cả 2 file</div></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -663,6 +759,10 @@ tbody tr.is-new td{background:rgba(0,168,107,0.06)}
               </div>
               <input class="field-input" id="search-diaban" placeholder="Gõ để tìm kiếm..." autocomplete="off" oninput="onSearchDiabanInput(this.value)">
               <div class="autocomplete-list" id="ac-search-diaban"></div>
+            </div>
+            <div class="field"><label class="field-label">Nhà thầu trúng thầu (chỉ KQDT)</label>
+              <input class="field-input" id="search-vendor" placeholder="Gõ tên nhà thầu..." autocomplete="off" oninput="onSearchVendorInput(this.value)">
+              <div class="autocomplete-list" id="ac-search-vendor"></div>
             </div>
             <div class="field"><label class="field-label">Loại thông tin</label>
               <select class="field-select" id="search-type" onchange="runSearch()">
@@ -749,9 +849,22 @@ tbody tr.is-new td{background:rgba(0,168,107,0.06)}
       </div>
 
       <div class="page" id="page-watchlist">
-        <div class="card" style="margin-bottom:var(--s-5);background:linear-gradient(135deg,var(--c-info-bg) 0%,transparent 100%);border-color:rgba(59,130,246,0.25)">
+        <div class="card" style="margin-bottom:var(--s-5);background:linear-gradient(135deg,rgba(58,92,170,0.10) 0%,transparent 100%);border-color:rgba(58,92,170,0.25)">
           <div class="card-header" style="margin-bottom:var(--s-3)">
-            <div class="card-title"><span class="card-title-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg></span>Cài đặt thông báo Wishlist</div>
+            <div class="card-title"><span class="card-title-icon" style="background:#3A5CAA;color:#FFE100"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg></span>Cài đặt thông báo Wishlist</div>
+          </div>
+          <!-- Email recipients (v3.5) -->
+          <div style="background:#FFE100;border-radius:var(--r-md);padding:var(--s-3) var(--s-4);margin-bottom:var(--s-3)">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#0E2F5F" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <div style="font-size:13px;font-weight:800;color:#0E2F5F">Email nhận thông báo tự động</div>
+            </div>
+            <div style="font-size:11.5px;color:#0E2F5F;margin-bottom:8px;line-height:1.5">Hệ thống sẽ tự động gửi email PDF + Excel đến TẤT CẢ địa chỉ trong danh sách này khi có gói khớp wishlist.</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+              <input class="field-input" id="wish-email-input" type="email" placeholder="email@example.com" style="flex:1;min-width:200px;font-size:12.5px;background:#FFF" onkeydown="if(event.key==='Enter')addWishEmail()">
+              <button class="btn btn-primary btn-sm" onclick="addWishEmail()" style="background:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>Thêm email</button>
+            </div>
+            <div id="wish-emails-list" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px"></div>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s-3)">
             <label class="checkbox-wrap" id="notify-instant" onclick="toggleNotifyMode('instantEmail', this)" style="padding:var(--s-3) var(--s-4);font-size:13px;cursor:pointer">
@@ -764,7 +877,7 @@ tbody tr.is-new td{background:rgba(0,168,107,0.06)}
             </label>
           </div>
           <div style="margin-top:var(--s-3);padding:var(--s-3);background:var(--surface-2);border-radius:var(--r-md);font-size:11.5px;color:var(--text-secondary);line-height:1.5">
-            ℹ️ Email gồm <strong>cả PDF + Excel</strong> đầy đủ thông tin gói thầu (ngày phê duyệt, chủ đầu tư, tên gói, giá trúng, nhà thầu...). Wishlist được lưu trên Google Sheet, không phụ thuộc thiết bị — anh có thể dùng từ máy nào cũng nhận được email.
+            ℹ️ Email gồm <strong>cả PDF + Excel</strong> đầy đủ thông tin gói thầu. Wishlist được lưu trên Google Sheet, không phụ thuộc thiết bị.
           </div>
         </div>
         <div class="watch-grid">
@@ -918,7 +1031,7 @@ const REQUIRED_BACKEND_VERSION = '3.4'; // backend phải >= version này (v3.4:
    ⚡ HARDCODED CONFIG — anh chỉ cần đổi APPS_URL_HARDCODED nếu re-deploy
    Ai mở file này lên là tự động kết nối được — không cần cấu hình
    ============================================================ */
-const APPS_URL_HARDCODED = 'https://script.google.com/macros/s/AKfycbyPPfPEILqb2xvWkTi4fylV-n9VT5aVurWXiboMbWUq6DlaEc2vK3xDWlotoOOyftxd/exec';
+const APPS_URL_HARDCODED = 'https://script.google.com/macros/s/AKfycbwv3R7EACqtt3pQZfMWRQFilC4E0W7td8Z8xWxQW6P7UckqFjWFJSFxcOWBZknHplhQuQ/exec';
 
 const CONFIG = {
   // Ưu tiên localStorage (cho phép user override khi cần) → fallback HARDCODED
@@ -987,12 +1100,13 @@ const SCHEMA = {
 };
 
 let DATA = { kqdt: [], tbmt: [], khmt: [], mmhAccounts: [] };
-let SEARCH_STATE = { tags: [], type: 'all', region: 'all', from: null, to: null, mmhOnly: false };
+let VENDOR_LIST_CACHE = null;
+let SEARCH_STATE = { tags: [], type: 'all', region: 'all', from: null, to: null, mmhOnly: false, vendor: '' };
 let DASH_STATE = { mode: 'value', from: null, to: null, mmhOnly: false };
 let PIPE_STATE = { from: null, to: null };
 let CONFIRM_STATE = { investor: null, mmh: null };
 // WATCH_STATE.notify = { instantEmail: bool, weeklyEmail: bool }
-let WATCH_STATE = { investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true } };
+let WATCH_STATE = { investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true }, recipients: [] };
 let CHARTS = {};
 let CURRENT_USER = null;
 let DRILL_STATE = { rows: [], type: 'kqdt', title: '', sub: '' };
@@ -1131,6 +1245,8 @@ function buildInvestorIndex() {
     const sorted = [...variantMap.entries()].sort((a, b) => b[1] - a[1]).map(e => e[0]);
     INVESTOR_INDEX.canonical.set(key, sorted);
   });
+  // v3.5: invalidate vendor cache
+  VENDOR_LIST_CACHE = null;
 }
 
 /* ============================================================
@@ -1253,30 +1369,50 @@ async function apiPost(action, payload = {}) {
    AUTH (Yêu cầu #7: bỏ giới hạn domain)
    ============================================================ */
 function doLogin() {
-  const email = $('login-email').value.trim();
-  const pass = $('login-pass').value;
-  if (!email || !pass) { toast('error', 'Thiếu thông tin', 'Vui lòng nhập email và mật khẩu'); return; }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    toast('error', 'Email không hợp lệ', 'Vui lòng nhập đúng định dạng email'); return;
+  // v3.5: Auto vào thẳng app — không cần email/password
+  try {
+    const cached = localStorage.getItem('mmh_user');
+    if (cached) {
+      try { CURRENT_USER = JSON.parse(cached); } catch (e) { CURRENT_USER = null; }
+    }
+    if (!CURRENT_USER || !CURRENT_USER.email) {
+      CURRENT_USER = { email: 'mmh.user@manimedicalhanoi.com', name: 'MMH User' };
+    }
+    const uName = $('user-name'); if (uName) uName.textContent = CURRENT_USER.name;
+    const uEmail = $('user-email'); if (uEmail) uEmail.textContent = CURRENT_USER.email;
+    const initials = (CURRENT_USER.name || 'M').split(' ').slice(0, 2).map(w => w.charAt(0)).join('').toUpperCase() || 'M';
+    const uAvatar = $('user-avatar'); if (uAvatar) uAvatar.textContent = initials;
+    try { localStorage.setItem('mmh_user', JSON.stringify(CURRENT_USER)); } catch(e) {}
+    try { loadWatchState(); } catch(e) { console.warn('loadWatchState:', e); }
+    const screen = $('login-screen');
+    if (screen) {
+      screen.style.transition = 'opacity 300ms';
+      screen.style.opacity = '0';
+    }
+    setTimeout(() => {
+      try {
+        if (screen) screen.classList.add('hidden');
+        const appEl = $('app');
+        if (appEl) appEl.classList.remove('hidden');
+        initApp();
+      } catch(err) {
+        console.error('initApp error:', err);
+        // Force show app even if initApp throws
+        const ls = document.getElementById('login-screen');
+        const ap = document.getElementById('app');
+        if (ls) ls.style.display = 'none';
+        if (ap) { ap.style.display = 'flex'; ap.classList.remove('hidden'); }
+      }
+    }, 300);
+  } catch(err) {
+    console.error('doLogin error:', err);
+    // Hard fallback
+    const ls = document.getElementById('login-screen');
+    const ap = document.getElementById('app');
+    if (ls) ls.style.display = 'none';
+    if (ap) { ap.style.display = 'flex'; ap.classList.remove('hidden'); }
+    try { initApp(); } catch(e) {}
   }
-  CURRENT_USER = {
-    email: email,
-    name: email.split('@')[0].split(/[\.\-_]/).map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
-  };
-  $('user-name').textContent = CURRENT_USER.name;
-  $('user-email').textContent = CURRENT_USER.email;
-  const initials = CURRENT_USER.name.split(' ').slice(0, 2).map(w => w.charAt(0)).join('').toUpperCase();
-  $('user-avatar').textContent = initials;
-  localStorage.setItem('mmh_user', JSON.stringify(CURRENT_USER));
-  loadWatchState();
-  const screen = $('login-screen');
-  screen.style.transition = 'opacity 400ms';
-  screen.style.opacity = '0';
-  setTimeout(() => {
-    screen.classList.add('hidden');
-    $('app').classList.remove('hidden');
-    initApp();
-  }, 400);
 }
 function doLogout() {
   if (!confirm('Đăng xuất khỏi MMH Tender?')) return;
@@ -2016,6 +2152,397 @@ function renderDashboard() {
   $('kpi-giagoi').textContent = fmtVND(kqdt.reduce((s, r) => s + (r.giaGoi || 0), 0));
   $('kpi-giatrung').textContent = fmtVND(kqdt.reduce((s, r) => s + (r.giaTrung || 0), 0));
   renderCharts();
+  renderAdvancedAnalytics();
+}
+
+/* ============================================================
+   ADVANCED ANALYTICS v3.5 — Phân loại CDT, từ khoá, insight
+   ============================================================ */
+const INV_TYPE_PATTERNS = {
+  cdc: { label: 'Trung tâm Kiểm soát bệnh tật (CDC)', regex: /trung\s*t[aâ]m\s*ki[eể]m\s*so[aá]t\s*b[eệ]nh\s*t[aậ]t|^cdc\b|\bcdc\s/i, color: '#DC2626' },
+  ttyt: { label: 'Trung tâm Y tế', regex: /trung\s*t[aâ]m\s*y\s*t[eế]/i, color: '#F59E0B' },
+  benhvien: { label: 'Bệnh viện', regex: /b[eệ]nh\s*vi[eệ]n|hospital|^bv\s|\bbvđk\b|\bbv\s|trung\s*t[aâ]m\s*pháp\s*y/i, color: '#3A5CAA' },
+  soyte: { label: 'Sở Y tế', regex: /s[oở]\s*y\s*t[eế]|b[oộ]\s*y\s*t[eế]/i, color: '#8B5CF6' },
+  khac: { label: 'Khác', regex: null, color: '#64748B' }
+};
+
+const KW_DEFAULTS = [
+  { id: 'vattu', label: 'Vật tư', regex: /v[aậ]t\s*t[uư]/i, color: '#3A5CAA', icon: '📦' },
+  { id: 'nhankhoa', label: 'Nhãn khoa', regex: /nh[aã]n\s*khoa|th[uủ]y\s*tinh\s*th[eể]|\bm[aắ]t\b|nh[aã]n\s*c[aầ]u/i, color: '#FFE100', icon: '👁' },
+  { id: 'nhakhoa', label: 'Nha khoa / RHM', regex: /nha\s*khoa|r[aă]ng\s*h[aà]m\s*m[aặ]t|\brhm\b/i, color: '#00A86B', icon: '🦷' },
+  { id: 'chanthuong', label: 'Chấn thương / Phẫu thuật', regex: /ch[aấ]n\s*th[uươ]ng|ph[aẫ]u\s*thu[aậ]t|surgery/i, color: '#EC4899', icon: '🩺' },
+  { id: 'cotsong', label: 'Cột sống / Sọ não', regex: /c[oộ]t\s*s[oố]ng|s[oọ]\s*n[aã]o|spine|neuro/i, color: '#F97316', icon: '🧠' }
+];
+
+let CUSTOM_KW = JSON.parse(localStorage.getItem('mmh_custom_kw') || '[]');
+let ADV_INV_TYPE = 'benhvien';
+let ADV_VENDOR_TYPE = 'benhvien';
+
+function getAllKeywords() {
+  return [...KW_DEFAULTS, ...CUSTOM_KW.map(k => ({
+    id: 'custom_' + k.replace(/\W+/g, '_'),
+    label: k,
+    regex: new RegExp(k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*'), 'i'),
+    color: '#6366F1',
+    icon: '🏷️',
+    custom: true
+  }))];
+}
+
+function classifyInvestor(name) {
+  const s = String(name || '').trim();
+  if (!s) return 'khac';
+  if (INV_TYPE_PATTERNS.cdc.regex.test(s)) return 'cdc';
+  if (INV_TYPE_PATTERNS.ttyt.regex.test(s)) return 'ttyt';
+  if (INV_TYPE_PATTERNS.soyte.regex.test(s)) return 'soyte';
+  if (INV_TYPE_PATTERNS.benhvien.regex.test(s)) return 'benhvien';
+  return 'khac';
+}
+
+function normalizeVendor(name) {
+  if (!name) return '';
+  let s = String(name).trim();
+  s = s.replace(/^\s*(nh[aà]\s*th[aầ]u(?:\s*tr[uú]ng)?|đ[oơ]n\s*v[iị]\s*tr[uú]ng|nha\s*thau)\s*[:：\-–—]\s*/i, '');
+  return s.replace(/\s+/g, ' ').trim();
+}
+
+function normalizeVendorKey(name) {
+  return normalizeVendor(name).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').trim();
+}
+
+function buildVendorIndex(rows) {
+  const idx = new Map();
+  rows.forEach(r => {
+    const v = safe(r.nhaTrung);
+    if (!v) return;
+    const k = normalizeVendorKey(v);
+    if (!k) return;
+    if (!idx.has(k)) idx.set(k, { display: normalizeVendor(v), rows: [], totalValue: 0, totalCount: 0 });
+    const e = idx.get(k);
+    e.rows.push(r);
+    e.totalValue += (r.giaTrung || 0);
+    e.totalCount++;
+  });
+  return idx;
+}
+
+function classifyMethod(method) {
+  const s = String(method || '').toLowerCase().trim();
+  if (!s) return 'Khác';
+  if (/đ[aấ]u\s*th[aầ]u\s*r[oộ]ng\s*r[aã]i|rộng rãi/i.test(method)) return 'Đấu thầu rộng rãi';
+  if (/ch[oà]o\s*gi[aá]\s*tr[uự]c\s*tuy[eế]n|trực tuyến rút gọn/i.test(method)) return 'Chào giá trực tuyến rút gọn';
+  if (/ch[oà]o\s*h[aà]ng\s*c[aạ]nh\s*tranh|cạnh tranh/i.test(method)) return 'Chào hàng cạnh tranh';
+  if (/ch[iỉ]\s*đ[iị]nh\s*th[aầ]u\s*r[uú]t\s*g[oọ]n|chỉ định.*rút gọn/i.test(method)) return 'Chỉ định thầu rút gọn';
+  if (/ch[iỉ]\s*đ[iị]nh\s*th[aầ]u|chỉ định/i.test(method)) return 'Chỉ định thầu';
+  if (/mua\s*s[aắ]m\s*tr[uự]c\s*ti[eế]p|trực tiếp/i.test(method)) return 'Mua sắm trực tiếp';
+  if (/đ[aà]m\s*ph[aá]n\s*gi[aá]/i.test(method)) return 'Đàm phán giá';
+  if (/đ[aấ]u\s*th[aầ]u\s*h[aạ]n\s*ch[eế]/i.test(method)) return 'Đấu thầu hạn chế';
+  if (/t[uự]\s*th[uự]c\s*hi[eệ]n/i.test(method)) return 'Tự thực hiện';
+  return safe(method) || 'Khác';
+}
+
+function renderAdvancedAnalytics() {
+  const kqdt = getFilteredKQDT();
+  if (!kqdt.length) {
+    ['kpi-saving','kpi-investors','kpi-vendors','kpi-saving-value'].forEach(id => { const el = $(id); if (el) el.textContent = '—'; });
+    ['kpi-saving-insight','kpi-investors-insight','kpi-vendors-insight','kpi-saving-value-insight','investor-type-insight','method-insight','invtype-insight','vendortype-insight','kw-insight','kw-method-insight'].forEach(id => { const el = $(id); if (el) el.textContent = 'Không có dữ liệu trong khoảng lọc'; });
+    const periodEl = $('adv-period-info'); if (periodEl) periodEl.textContent = 'Chưa có dữ liệu';
+    return;
+  }
+  const dates = kqdt.map(r => getRowDate(r, 'kqdt')).filter(Boolean).sort((a, b) => a - b);
+  if (dates.length && $('adv-period-info')) {
+    $('adv-period-info').textContent = kqdt.length.toLocaleString('vi-VN') + ' gói · ' + fmtDateVN(dates[0]) + ' → ' + fmtDateVN(dates[dates.length-1]);
+  }
+  const totalGiaGoi = kqdt.reduce((s, r) => s + (r.giaGoi || 0), 0);
+  const totalGiaTrung = kqdt.reduce((s, r) => s + (r.giaTrung || 0), 0);
+  const savingValue = totalGiaGoi - totalGiaTrung;
+  const savingPct = totalGiaGoi > 0 ? (savingValue / totalGiaGoi * 100) : 0;
+  const investorSet = new Set();
+  kqdt.forEach(r => { const k = r._invKey || normalizeInvestorKey(r.benMoiThau); if (k) investorSet.add(k); });
+  const vendorSet = new Set();
+  kqdt.forEach(r => { const k = normalizeVendorKey(r.nhaTrung); if (k) vendorSet.add(k); });
+  $('kpi-saving').textContent = savingPct.toFixed(2) + '%';
+  $('kpi-saving-insight').textContent = savingPct >= 8 ? 'Cao hơn TB ngành ~6-8% — thị trường cạnh tranh tốt' : savingPct >= 4 ? 'Mức tiết kiệm trung bình ngành y tế' : 'Tiết kiệm thấp — nhiều gói chỉ định / 1 nhà thầu';
+  $('kpi-investors').textContent = investorSet.size.toLocaleString('vi-VN');
+  $('kpi-investors-insight').textContent = 'chủ đầu tư duy nhất (đã loại tiền tố)';
+  $('kpi-vendors').textContent = vendorSet.size.toLocaleString('vi-VN');
+  const avgPerVendor = vendorSet.size > 0 ? (kqdt.length / vendorSet.size).toFixed(1) : '0';
+  $('kpi-vendors-insight').textContent = 'nhà thầu duy nhất · TB ' + avgPerVendor + ' gói/NT';
+  $('kpi-saving-value').textContent = fmtVND(savingValue);
+  $('kpi-saving-value-insight').textContent = 'tiết kiệm tuyệt đối · ' + fmtVND(totalGiaGoi) + ' → ' + fmtVND(totalGiaTrung);
+  renderInvestorTypeChart(kqdt);
+  renderMethodDetailChart(kqdt);
+  renderTopInvestorByType();
+  renderTopVendorByType();
+  renderKeywordCards();
+  populateKWMethodSelect();
+  renderKeywordMethodChart();
+}
+
+function renderInvestorTypeChart(kqdt) {
+  const ctx = $('chart-investor-type');
+  if (!ctx) return;
+  const counts = { benhvien:{count:0,value:0}, ttyt:{count:0,value:0}, cdc:{count:0,value:0}, soyte:{count:0,value:0}, khac:{count:0,value:0} };
+  kqdt.forEach(r => { const t = classifyInvestor(r.benMoiThau); counts[t].count++; counts[t].value += (r.giaTrung||0); });
+  const order = ['benhvien','ttyt','cdc','soyte','khac'];
+  const labels = order.map(k => INV_TYPE_PATTERNS[k].label);
+  const colors = order.map(k => INV_TYPE_PATTERNS[k].color);
+  const valueData = order.map(k => +(counts[k].value/1e9).toFixed(2));
+  const countData = order.map(k => counts[k].count);
+  if (CHARTS.invType) { try { CHARTS.invType.destroy(); } catch(e){} }
+  CHARTS.invType = new Chart(ctx, {
+    type:'bar',
+    data:{ labels, datasets:[
+      { label:'Giá trị trúng (tỷ VND)', data:valueData, backgroundColor:colors, borderRadius:6, yAxisID:'y', order:2, datalabels:{color:'#0F172A',font:{weight:700,size:10.5},anchor:'end',align:'end',formatter:v=>v.toFixed(1)+'T'} },
+      { label:'Số gói', data:countData, backgroundColor:'transparent', borderColor:'#0E2F5F', borderWidth:2.5, type:'line', tension:0.3, yAxisID:'y1', pointRadius:5, pointBackgroundColor:'#0E2F5F', pointBorderColor:'#FFE100', pointBorderWidth:2, order:1, datalabels:{display:false} }
+    ]},
+    options:{ responsive:true, maintainAspectRatio:false,
+      onClick:(evt,els)=>{ if(!els.length)return; const t=order[els[0].index]; const filtered=kqdt.filter(r=>classifyInvestor(r.benMoiThau)===t); showDrill('Loại CDT: '+INV_TYPE_PATTERNS[t].label, filtered.length+' gói · '+fmtVND(filtered.reduce((s,r)=>s+(r.giaTrung||0),0)), filtered,[],[]); },
+      plugins:{legend:{position:'top'}},
+      scales:{ y:{type:'linear',position:'left',title:{display:true,text:'Tỷ VND'}}, y1:{type:'linear',position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'Số gói'}} }
+    }
+  });
+  const sorted = order.slice().sort((a,b)=>counts[b].value-counts[a].value);
+  const top = sorted[0];
+  const sumVal = order.reduce((s,k)=>s+counts[k].value,0);
+  const topPct = sumVal>0?((counts[top].value/sumVal)*100).toFixed(1):0;
+  const totalCount = order.reduce((s,k)=>s+counts[k].count,0);
+  const topCountPct = totalCount>0?((counts[top].count/totalCount)*100).toFixed(1):0;
+  $('investor-type-insight').innerHTML = '<strong>📊 Insight:</strong> '+INV_TYPE_PATTERNS[top].label+' dẫn đầu với <strong>'+counts[top].count.toLocaleString('vi-VN')+' gói ('+topCountPct+'%)</strong> và <strong>'+fmtVND(counts[top].value)+'</strong> giá trị trúng ('+topPct+'% tổng giá trị). Đây là phân khúc khách hàng ưu tiên cần chăm sóc kỹ.';
+}
+
+function renderMethodDetailChart(kqdt) {
+  const ctx = $('chart-method-detail');
+  if (!ctx) return;
+  const map = {};
+  kqdt.forEach(r => { const m=classifyMethod(r.hinhThuc); if(!map[m])map[m]={count:0,giaGoi:0,giaTrung:0}; map[m].count++; map[m].giaGoi+=(r.giaGoi||0); map[m].giaTrung+=(r.giaTrung||0); });
+  const keys = Object.keys(map).sort((a,b)=>map[b].giaTrung-map[a].giaTrung);
+  if (CHARTS.methodDetail) { try { CHARTS.methodDetail.destroy(); } catch(e){} }
+  CHARTS.methodDetail = new Chart(ctx, {
+    type:'bar',
+    data:{ labels:keys, datasets:[
+      { label:'Giá gói (tỷ)', data:keys.map(k=>+(map[k].giaGoi/1e9).toFixed(2)), backgroundColor:'#3A5CAA', borderRadius:4, datalabels:{color:'#FFF',font:{weight:700,size:9},formatter:v=>v>0.5?v.toFixed(1):''} },
+      { label:'Giá trúng (tỷ)', data:keys.map(k=>+(map[k].giaTrung/1e9).toFixed(2)), backgroundColor:'#FFE100', borderRadius:4, datalabels:{color:'#0E2F5F',font:{weight:700,size:9},formatter:v=>v>0.5?v.toFixed(1):''} },
+      { label:'Tiết kiệm (tỷ)', data:keys.map(k=>+((map[k].giaGoi-map[k].giaTrung)/1e9).toFixed(2)), backgroundColor:'#DC2626', borderRadius:4, datalabels:{color:'#FFF',font:{weight:700,size:9},formatter:v=>v>0.5?v.toFixed(1):''} }
+    ]},
+    options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'top'}}, scales:{x:{title:{display:true,text:'Tỷ VND'}}} }
+  });
+  const total = Object.values(map).reduce((s,v)=>s+v.giaTrung,0);
+  const topM = keys[0];
+  const topMethodPct = total>0?((map[topM].giaTrung/total)*100).toFixed(1):0;
+  let bestSaving={method:'',pct:0};
+  keys.forEach(k=>{ const pct=map[k].giaGoi>0?((map[k].giaGoi-map[k].giaTrung)/map[k].giaGoi*100):0; if(pct>bestSaving.pct&&map[k].count>=3)bestSaving={method:k,pct}; });
+  let insight='<strong>📊 Insight hình thức:</strong> <strong>'+topM+'</strong> chiếm '+topMethodPct+'% giá trị ('+map[topM].count+' gói, '+fmtVND(map[topM].giaTrung)+'). ';
+  if(bestSaving.method)insight+='Hình thức <strong>'+bestSaving.method+'</strong> có tỉ lệ tiết kiệm cao nhất '+bestSaving.pct.toFixed(1)+'% — đây là hình thức cạnh tranh nhất.';
+  $('method-insight').innerHTML = insight;
+}
+
+function setInvTypeTab(t) {
+  ADV_INV_TYPE = t;
+  document.querySelectorAll('#invtype-tabs .btn-tab').forEach(b => b.classList.toggle('active', b.dataset.itype===t));
+  renderTopInvestorByType();
+}
+
+function renderTopInvestorByType() {
+  const kqdt = getFilteredKQDT().filter(r => classifyInvestor(r.benMoiThau)===ADV_INV_TYPE);
+  const agg = new Map();
+  kqdt.forEach(r => {
+    const k = r._invKey || normalizeInvestorKey(r.benMoiThau);
+    if(!k) return;
+    if(!agg.has(k)) agg.set(k, {display:getCanonicalInvestor(r.benMoiThau)||normalizeInvestor(r.benMoiThau), count:0, value:0, methods:{}});
+    const e=agg.get(k); e.count++; e.value+=(r.giaTrung||0);
+    const m=classifyMethod(r.hinhThuc); e.methods[m]=(e.methods[m]||0)+1;
+  });
+  const arr = [...agg.values()].sort((a,b)=>b.value-a.value).slice(0,10);
+  const ctx1 = $('chart-top-investor-by-type');
+  if(CHARTS.topInvType){try{CHARTS.topInvType.destroy();}catch(e){}}
+  if(ctx1&&arr.length){
+    CHARTS.topInvType = new Chart(ctx1, {
+      type:'bar',
+      data:{ labels:arr.map(x=>x.display.length>35?x.display.slice(0,35)+'…':x.display),
+        datasets:[
+          {label:'Giá trị (tỷ)',data:arr.map(x=>+(x.value/1e9).toFixed(2)),backgroundColor:'#3A5CAA',yAxisID:'y',borderRadius:4,datalabels:{color:'#0F172A',font:{weight:700,size:9.5},anchor:'end',align:'end',formatter:v=>v.toFixed(1)+'T'}},
+          {label:'Số gói',data:arr.map(x=>x.count),backgroundColor:'#FFE100',yAxisID:'y1',borderRadius:4,datalabels:{color:'#0E2F5F',font:{weight:700,size:9.5},anchor:'end',align:'end'}}
+        ]},
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top'}},scales:{y:{ticks:{font:{size:10}}},x:{title:{display:true,text:'Giá trị (tỷ VND) / Số gói'}},y1:{display:false}}}
+    });
+  }
+  const methodAgg={};
+  kqdt.forEach(r=>{ const m=classifyMethod(r.hinhThuc); if(!methodAgg[m])methodAgg[m]={count:0,value:0}; methodAgg[m].count++; methodAgg[m].value+=(r.giaTrung||0); });
+  const mKeys=Object.keys(methodAgg).sort((a,b)=>methodAgg[b].value-methodAgg[a].value);
+  const ctx2=$('chart-method-by-type');
+  if(CHARTS.methodByType){try{CHARTS.methodByType.destroy();}catch(e){}}
+  if(ctx2&&mKeys.length){
+    CHARTS.methodByType = new Chart(ctx2, {
+      type:'doughnut',
+      data:{labels:mKeys,datasets:[{data:mKeys.map(k=>methodAgg[k].value),backgroundColor:['#3A5CAA','#FFE100','#0E2F5F','#00A86B','#DC2626','#8B5CF6','#F59E0B','#06B6D4'],borderWidth:2,borderColor:'#FFF'}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{font:{size:11},padding:10}},datalabels:{color:'#FFF',font:{weight:700,size:11},formatter:(v,ctx)=>{const t=ctx.dataset.data.reduce((s,x)=>s+x,0);const p=t>0?((v/t)*100).toFixed(1):0;return p>5?p+'%':'';}}}}
+    });
+  }
+  if(arr.length){
+    const total=arr.reduce((s,x)=>s+x.value,0);
+    const top1=arr[0];
+    const top3Pct=total>0?((arr.slice(0,3).reduce((s,x)=>s+x.value,0)/total)*100).toFixed(1):0;
+    const topMethod=mKeys[0]||'—';
+    const topMethodVal=mKeys[0]?fmtVND(methodAgg[mKeys[0]].value):'0';
+    $('invtype-insight').innerHTML='<strong>📊 Insight '+INV_TYPE_PATTERNS[ADV_INV_TYPE].label+':</strong> Top 10 chiếm <strong>'+arr.reduce((s,x)=>s+x.count,0)+' gói · '+fmtVND(total)+'</strong>. <strong>'+top1.display+'</strong> dẫn đầu ('+top1.count+' gói, '+fmtVND(top1.value)+'). Top 3 chiếm '+top3Pct+'% giá trị. Hình thức chính: <strong>'+topMethod+'</strong> ('+topMethodVal+').';
+  } else {
+    $('invtype-insight').innerHTML='<em>Không có dữ liệu cho loại '+INV_TYPE_PATTERNS[ADV_INV_TYPE].label+' trong khoảng lọc.</em>';
+  }
+}
+
+function setVendorTypeTab(t) {
+  ADV_VENDOR_TYPE = t;
+  document.querySelectorAll('#vendortype-tabs .btn-tab').forEach(b => b.classList.toggle('active', b.dataset.vtype===t));
+  renderTopVendorByType();
+}
+
+function renderTopVendorByType() {
+  const kqdt = getFilteredKQDT().filter(r => classifyInvestor(r.benMoiThau)===ADV_VENDOR_TYPE);
+  const idx = buildVendorIndex(kqdt);
+  const arr = [...idx.values()].sort((a,b)=>b.totalValue-a.totalValue).slice(0,10);
+  const ctx = $('chart-top-vendor-by-type');
+  if(CHARTS.topVendorByType){try{CHARTS.topVendorByType.destroy();}catch(e){}}
+  if(ctx&&arr.length){
+    CHARTS.topVendorByType = new Chart(ctx, {
+      type:'bar',
+      data:{labels:arr.map(x=>x.display.length>40?x.display.slice(0,40)+'…':x.display),datasets:[
+        {label:'Giá trị trúng (tỷ)',data:arr.map(x=>+(x.totalValue/1e9).toFixed(2)),backgroundColor:'#0E2F5F',yAxisID:'y',borderRadius:4,datalabels:{color:'#0F172A',font:{weight:700,size:10},anchor:'end',align:'end',formatter:v=>v.toFixed(2)+'T'}},
+        {label:'Số gói',data:arr.map(x=>x.totalCount),backgroundColor:'#FFE100',yAxisID:'y1',borderRadius:4,datalabels:{color:'#0E2F5F',font:{weight:700,size:10},anchor:'end',align:'end'}}
+      ]},
+      options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,onClick:(evt,els)=>{if(!els.length)return;const v=arr[els[0].index];showDrill('Nhà thầu: '+v.display,v.totalCount+' gói · '+fmtVND(v.totalValue)+' (loại: '+INV_TYPE_PATTERNS[ADV_VENDOR_TYPE].label+')',v.rows,[],[]);},plugins:{legend:{position:'top'}},scales:{y:{ticks:{font:{size:10}}},y1:{display:false}}}
+    });
+  }
+  if(arr.length){
+    const total=arr.reduce((s,x)=>s+x.totalValue,0);
+    const top1=arr[0];
+    const top1Pct=total>0?((top1.totalValue/total)*100).toFixed(1):0;
+    $('vendortype-insight').innerHTML='<strong>📊 Insight nhà thầu ('+INV_TYPE_PATTERNS[ADV_VENDOR_TYPE].label+'):</strong> Top 10 chiếm <strong>'+fmtVND(total)+'</strong>. <strong>'+top1.display+'</strong> dẫn đầu với '+top1.totalCount+' gói ('+top1Pct+'% giá trị top 10). '+(arr.length===10?'Còn nhiều nhà thầu khác ngoài top 10 — thị trường đa dạng.':'Chỉ '+arr.length+' nhà thầu hoạt động trong segment này.');
+  } else {
+    $('vendortype-insight').innerHTML='<em>Không có dữ liệu nhà thầu cho loại '+INV_TYPE_PATTERNS[ADV_VENDOR_TYPE].label+'.</em>';
+  }
+}
+
+function renderKeywordCards() {
+  const kqdt = getFilteredKQDT();
+  const allKW = getAllKeywords();
+  const grid = $('kw-grid');
+  if(!grid) return;
+  const totalCount = kqdt.length;
+  const totalValue = kqdt.reduce((s,r)=>s+(r.giaTrung||0),0);
+  const cards = allKW.map(kw => {
+    const matched = kqdt.filter(r => kw.regex.test(safe(r.tenGoi)));
+    const count = matched.length;
+    const value = matched.reduce((s,r)=>s+(r.giaTrung||0),0);
+    const byType={benhvien:0,ttyt:0,cdc:0,soyte:0,khac:0};
+    const byTypeValue={benhvien:0,ttyt:0,cdc:0,soyte:0,khac:0};
+    matched.forEach(r=>{ const t=classifyInvestor(r.benMoiThau); byType[t]++; byTypeValue[t]+=(r.giaTrung||0); });
+    const pct=totalCount>0?((count/totalCount)*100).toFixed(1):0;
+    const valuePct=totalValue>0?((value/totalValue)*100).toFixed(1):0;
+    const topType=['benhvien','ttyt','cdc','soyte','khac'].sort((a,b)=>byTypeValue[b]-byTypeValue[a])[0];
+    const delBtn = kw.custom
+      ? `<button class="icon-btn" style="width:24px;height:24px" onclick="event.stopPropagation();removeCustomKW('${escapeAttr(kw.label)}')" ><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>`
+      : '';
+    const bottomInfo = count > 0
+      ? `<div style="font-size:10.5px;margin-top:8px;color:#0E2F5F;line-height:1.5"><strong>Top mua:</strong> ${escapeHtml(INV_TYPE_PATTERNS[topType].label)} (${byType[topType]} gói · ${fmtVND(byTypeValue[topType])})<br><span style="color:var(--text-muted)">BV: ${byType.benhvien} · TTYT: ${byType.ttyt} · CDC: ${byType.cdc} · SYT: ${byType.soyte} · Khác: ${byType.khac}</span></div>`
+      : '<div style="font-size:11px;color:var(--text-muted);margin-top:8px;font-style:italic">Không có gói khớp</div>';
+    return `<div class="card" style="background:linear-gradient(135deg,${kw.color}20,transparent);border-left:3px solid ${kw.color};padding:var(--s-3);cursor:pointer" onclick="drillKeyword('${kw.id}')">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <div style="font-size:20px">${kw.icon}</div>
+        <div style="flex:1">
+          <div style="font-size:13px;font-weight:700;color:#0E2F5F">${escapeHtml(kw.label)}</div>
+          <div style="font-size:10.5px;color:var(--text-muted)">trên ${totalCount.toLocaleString('vi-VN')} gói KQDT</div>
+        </div>
+        ${delBtn}
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+        <div style="background:rgba(255,255,255,0.6);padding:8px;border-radius:var(--r-sm)">
+          <div style="font-size:18px;font-weight:800;color:${kw.color}">${count.toLocaleString('vi-VN')}</div>
+          <div style="font-size:10px;color:var(--text-muted)">gói (${pct}%)</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.6);padding:8px;border-radius:var(--r-sm)">
+          <div style="font-size:14px;font-weight:800;color:#0E2F5F">${fmtVND(value)}</div>
+          <div style="font-size:10px;color:var(--text-muted)">giá trị (${valuePct}%)</div>
+        </div>
+      </div>
+      ${bottomInfo}
+    </div>`;
+  }).join('');
+  grid.innerHTML = cards;
+  const matchedAny = kqdt.filter(r => allKW.some(kw => kw.regex.test(safe(r.tenGoi))));
+  const matchedPct = totalCount>0?((matchedAny.length/totalCount)*100).toFixed(1):0;
+  const matchedValue = matchedAny.reduce((s,r)=>s+(r.giaTrung||0),0);
+  const sortedKW = allKW.map(kw=>({kw,value:kqdt.filter(r=>kw.regex.test(safe(r.tenGoi))).reduce((s,r)=>s+(r.giaTrung||0),0)})).sort((a,b)=>b.value-a.value);
+  const topKW = sortedKW[0];
+  $('kw-insight').innerHTML = '<strong>🎯 Insight tổng quan:</strong> '+matchedAny.length.toLocaleString('vi-VN')+' gói ('+matchedPct+'%) khớp ít nhất 1 từ khoá, tổng giá trị '+fmtVND(matchedValue)+'. Từ khoá có giá trị cao nhất: <strong>'+escapeHtml(topKW.kw.label)+'</strong> với '+fmtVND(topKW.value)+'.';
+}
+
+function drillKeyword(kwId) {
+  const allKW = getAllKeywords();
+  const kw = allKW.find(k => k.id===kwId);
+  if(!kw) return;
+  const kqdt = getFilteredKQDT().filter(r => kw.regex.test(safe(r.tenGoi)));
+  const total = kqdt.reduce((s,r)=>s+(r.giaTrung||0),0);
+  showDrill('Từ khoá: '+kw.label, kqdt.length+' gói KQDT khớp · Tổng giá trị: '+fmtVND(total), kqdt,[],[]);
+}
+
+function addCustomKW() {
+  const v = ($('custom-kw-input').value||'').trim();
+  if(!v||v.length<2){toast('warning','Từ khoá quá ngắn','Tối thiểu 2 ký tự');return;}
+  if(CUSTOM_KW.includes(v)){toast('warning','Đã có','Từ khoá này đã tồn tại');return;}
+  CUSTOM_KW.push(v);
+  localStorage.setItem('mmh_custom_kw',JSON.stringify(CUSTOM_KW));
+  $('custom-kw-input').value='';
+  renderKeywordCards(); populateKWMethodSelect();
+  toast('success','✓ Đã thêm từ khoá',v);
+}
+
+function removeCustomKW(label) {
+  CUSTOM_KW = CUSTOM_KW.filter(k=>k!==label);
+  localStorage.setItem('mmh_custom_kw',JSON.stringify(CUSTOM_KW));
+  renderKeywordCards(); populateKWMethodSelect();
+}
+
+function resetCustomKW() {
+  CUSTOM_KW=[];
+  localStorage.setItem('mmh_custom_kw',JSON.stringify(CUSTOM_KW));
+  renderKeywordCards(); populateKWMethodSelect();
+}
+
+function populateKWMethodSelect() {
+  const sel=$('kw-method-select');
+  if(!sel) return;
+  const cur=sel.value;
+  const allKW=getAllKeywords();
+  sel.innerHTML=allKW.map(kw=>'<option value="'+kw.id+'">'+escapeHtml(kw.icon+' '+kw.label)+'</option>').join('');
+  if(cur&&allKW.find(k=>k.id===cur))sel.value=cur;
+}
+
+function renderKeywordMethodChart() {
+  const sel=$('kw-method-select');
+  const ctx=$('chart-kw-method');
+  if(!sel||!ctx) return;
+  const allKW=getAllKeywords();
+  const kw=allKW.find(k=>k.id===sel.value)||allKW[0];
+  if(!kw) return;
+  const kqdt=getFilteredKQDT().filter(r=>kw.regex.test(safe(r.tenGoi)));
+  const map={};
+  kqdt.forEach(r=>{ const m=classifyMethod(r.hinhThuc); if(!map[m])map[m]={count:0,value:0}; map[m].count++; map[m].value+=(r.giaTrung||0); });
+  const keys=Object.keys(map).sort((a,b)=>map[b].value-map[a].value);
+  if(CHARTS.kwMethod){try{CHARTS.kwMethod.destroy();}catch(e){}}
+  if(!keys.length){ $('kw-method-insight').innerHTML='<em>Không có gói khớp từ khoá "'+escapeHtml(kw.label)+'" trong khoảng lọc.</em>'; return; }
+  CHARTS.kwMethod = new Chart(ctx, {
+    type:'bar',
+    data:{labels:keys,datasets:[
+      {label:'Số gói',data:keys.map(k=>map[k].count),backgroundColor:'#FFE100',yAxisID:'y',borderRadius:4,datalabels:{color:'#0E2F5F',font:{weight:700,size:10},anchor:'end',align:'end'}},
+      {label:'Giá trị (tỷ)',data:keys.map(k=>+(map[k].value/1e9).toFixed(2)),backgroundColor:'#3A5CAA',yAxisID:'y1',borderRadius:4,datalabels:{color:'#0F172A',font:{weight:700,size:10},anchor:'end',align:'end',formatter:v=>v.toFixed(1)+'T'}}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top'}},scales:{y:{type:'linear',position:'left',title:{display:true,text:'Số gói'}},y1:{type:'linear',position:'right',grid:{drawOnChartArea:false},title:{display:true,text:'Tỷ VND'}}}}
+  });
+  const total=Object.values(map).reduce((s,v)=>s+v.value,0);
+  const topM=keys[0];
+  const topPct=total>0?((map[topM].value/total)*100).toFixed(1):0;
+  $('kw-method-insight').innerHTML='<strong>📊 '+escapeHtml(kw.label)+':</strong> '+kqdt.length+' gói khớp, tổng '+fmtVND(total)+'. Hình thức chủ đạo: <strong>'+topM+'</strong> ('+map[topM].count+' gói, '+fmtVND(map[topM].value)+' = '+topPct+'%).';
 }
 
 /* ============================================================
@@ -2513,8 +3040,10 @@ function setSearchTimePreset(preset, el) {
 }
 function clearSearch() {
   SEARCH_STATE.tags = [];
+  SEARCH_STATE.vendor = '';
   $('search-diaban').value = ''; $('search-from').value = ''; $('search-to').value = '';
   $('search-type').value = 'all'; $('search-region').value = 'all';
+  const sv = $('search-vendor'); if (sv) sv.value = '';
   $('search-mmh-only').classList.remove('checked');
   document.querySelectorAll('#page-search .time-chip').forEach(c => c.classList.remove('active'));
   renderSearchTags();
@@ -2568,6 +3097,8 @@ function getSearchResults() {
   const to = $('search-to').value ? new Date($('search-to').value + 'T23:59:59') : null;
   const mmhOnly = isChecked('search-mmh-only');
   const tagKeys = SEARCH_STATE.tags.map(t => t.key);
+  const vendorQ = ((SEARCH_STATE.vendor || '') + '').trim();
+  const vendorFold = vendorQ ? fold(vendorQ) : '';
 
   let kqdt = filterByDate(DATA.kqdt, 'kqdt', from, to);
   let tbmt = filterByDate(DATA.tbmt, 'tbmt', from, to);
@@ -2579,11 +3110,45 @@ function getSearchResults() {
     tbmt = filterByInvestorTags(tbmt, tagKeys, 'tbmt');
     khmt = filterByInvestorTags(khmt, tagKeys, 'khmt');
   }
+  // v3.5: Filter theo Nhà thầu — chỉ áp dụng cho KQDT
+  if (vendorFold) {
+    kqdt = kqdt.filter(r => fold(safe(r.nhaTrung)).includes(vendorFold));
+    if (type === 'all') { tbmt = []; khmt = []; }
+  }
   if (type === 'kqdt') return { kqdt, tbmt: [], khmt: [] };
   if (type === 'tbmt') return { kqdt: [], tbmt, khmt: [] };
   if (type === 'khmt') return { kqdt: [], tbmt: [], khmt };
   return { kqdt, tbmt, khmt };
 }
+
+// v3.5: Vendor autocomplete
+function getVendorList() {
+  if (VENDOR_LIST_CACHE) return VENDOR_LIST_CACHE;
+  const idx = buildVendorIndex(DATA.kqdt);
+  VENDOR_LIST_CACHE = [...idx.entries()].map(([k, v]) => ({ key: k, name: v.display, count: v.totalCount, value: v.totalValue })).sort((a, b) => b.value - a.value);
+  return VENDOR_LIST_CACHE;
+}
+function onSearchVendorInput(val) {
+  const list = $('ac-search-vendor');
+  if (!list) return;
+  const v = (val || '').trim();
+  if (!v) { list.classList.remove('show'); SEARCH_STATE.vendor = ''; runSearch(); return; }
+  const all = getVendorList();
+  const f = fold(v);
+  const matches = all.filter(d => fold(d.name).includes(f)).slice(0, 12);
+  if (!matches.length) { list.classList.remove('show'); SEARCH_STATE.vendor = v; runSearch(); return; }
+  list.innerHTML = matches.map(d => '<div class="ac-item" onclick="selectSearchVendor(\'' + escapeAttr(d.name) + '\')"><div class="ac-item-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><span class="ac-item-text">' + highlight(d.name, v) + '</span><span class="ac-item-meta">' + d.count + ' gói · ' + fmtVND(d.value) + '</span></div>').join('');
+  list.classList.add('show');
+  SEARCH_STATE.vendor = v;
+  runSearch();
+}
+function selectSearchVendor(name) {
+  $('search-vendor').value = name;
+  $('ac-search-vendor').classList.remove('show');
+  SEARCH_STATE.vendor = name;
+  runSearch();
+}
+
 /* ============================================================
    SEARCH UI — tab-based view (KQDT / TBMT / KHMT)
    ============================================================ */
@@ -2782,18 +3347,18 @@ async function confirmMapping() {
    ============================================================ */
 let WATCH_SYNC_TIMER = null;
 function loadWatchState() {
-  // Fast path: localStorage cache for instant UI
   const key = 'mmh_watch_' + (CURRENT_USER ? CURRENT_USER.email : 'default');
   try {
     const cached = JSON.parse(localStorage.getItem(key) || 'null');
-    if (cached) WATCH_STATE = Object.assign({ investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true } }, cached);
+    if (cached) WATCH_STATE = Object.assign({ investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true }, recipients: [] }, cached);
   } catch (e) {}
   if (!WATCH_STATE.notify) WATCH_STATE.notify = { instantEmail: false, weeklyEmail: true };
-  // Then async fetch from sheet to sync
+  if (!Array.isArray(WATCH_STATE.recipients)) WATCH_STATE.recipients = [];
   if (CURRENT_USER && CONFIG.appsUrl) {
     apiGet('loadWishlist', { user: CURRENT_USER.email }).then(r => {
       if (r.wishlist) {
-        WATCH_STATE = Object.assign({ investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true } }, r.wishlist);
+        WATCH_STATE = Object.assign({ investors: [], keywords: [], notify: { instantEmail: false, weeklyEmail: true }, recipients: [] }, r.wishlist);
+        if (!Array.isArray(WATCH_STATE.recipients)) WATCH_STATE.recipients = [];
         localStorage.setItem(key, JSON.stringify(WATCH_STATE));
         if (CURRENT_PAGE === 'watchlist') renderWatchlist();
       }
@@ -2803,7 +3368,6 @@ function loadWatchState() {
 function saveWatchState() {
   const key = 'mmh_watch_' + (CURRENT_USER ? CURRENT_USER.email : 'default');
   localStorage.setItem(key, JSON.stringify(WATCH_STATE));
-  // Debounced sync to server
   if (WATCH_SYNC_TIMER) clearTimeout(WATCH_SYNC_TIMER);
   WATCH_SYNC_TIMER = setTimeout(() => {
     if (!CURRENT_USER || !CONFIG.appsUrl) return;
@@ -2811,6 +3375,34 @@ function saveWatchState() {
       .then(() => console.log('Wishlist synced'))
       .catch(e => console.warn('Wishlist sync failed:', e.message));
   }, 1500);
+}
+// v3.5: Email recipients management
+function addWishEmail() {
+  const v = ($('wish-email-input').value || '').trim();
+  if (!v) { toast('warning', 'Thiếu email', ''); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { toast('error', 'Email không hợp lệ', v); return; }
+  if (!Array.isArray(WATCH_STATE.recipients)) WATCH_STATE.recipients = [];
+  if (WATCH_STATE.recipients.find(e => e.toLowerCase() === v.toLowerCase())) { toast('warning', 'Đã có', v); return; }
+  WATCH_STATE.recipients.push(v);
+  saveWatchState();
+  $('wish-email-input').value = '';
+  renderWishEmails();
+  toast('success', '✓ Đã thêm', v + ' sẽ nhận thông báo tự động');
+}
+function removeWishEmail(email) {
+  WATCH_STATE.recipients = (WATCH_STATE.recipients || []).filter(e => e !== email);
+  saveWatchState();
+  renderWishEmails();
+}
+function renderWishEmails() {
+  const list = $('wish-emails-list');
+  if (!list) return;
+  const arr = WATCH_STATE.recipients || [];
+  if (!arr.length) {
+    list.innerHTML = '<div style="font-size:11.5px;color:#0E2F5F;font-style:italic;padding:6px 0">Chưa có email nào — thêm địa chỉ ở trên để nhận thông báo tự động</div>';
+    return;
+  }
+  list.innerHTML = arr.map(e => '<span style="display:inline-flex;align-items:center;gap:6px;background:#FFF;border:1.5px solid #3A5CAA;color:#0E2F5F;font-size:12px;padding:5px 10px;border-radius:var(--r-full);font-weight:600">📧 ' + escapeHtml(e) + ' <button onclick="removeWishEmail(\'' + escapeAttr(e) + '\')" style="background:none;border:none;cursor:pointer;color:#DC2626;display:flex;align-items:center;padding:0"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button></span>').join('');
 }
 function toggleNotifyMode(mode, el) {
   WATCH_STATE.notify[mode] = !WATCH_STATE.notify[mode];
@@ -2853,6 +3445,7 @@ function renderWatchlist() {
   // Sync notify mode UI state
   if ($('notify-instant')) $('notify-instant').classList.toggle('checked', !!(WATCH_STATE.notify && WATCH_STATE.notify.instantEmail));
   if ($('notify-weekly')) $('notify-weekly').classList.toggle('checked', !!(WATCH_STATE.notify && WATCH_STATE.notify.weeklyEmail));
+  renderWishEmails(); // v3.5: render danh sách email recipients
   $('watch-investor-count').textContent = WATCH_STATE.investors.length;
   $('watch-keyword-count').textContent = WATCH_STATE.keywords.length;
   $('watchlist-badge').textContent = WATCH_STATE.investors.length + WATCH_STATE.keywords.length;
@@ -3303,9 +3896,56 @@ function xlsxToBase64(wb) {
   for (let i = 0; i < bytes.byteLength; i++) bin += String.fromCharCode(bytes[i]);
   return btoa(bin);
 }
+// v3.5: Modal nhập email recipient
+function promptEmailAddress(defaultEmail, kindLabel) {
+  return new Promise((resolve) => {
+    const modalId = 'email-prompt-modal';
+    let m = document.getElementById(modalId);
+    if (m) m.remove();
+    m = document.createElement('div');
+    m.id = modalId;
+    m.style.cssText = 'position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;background:rgba(15,23,42,0.6);backdrop-filter:blur(8px);padding:20px';
+    const hist = JSON.parse(localStorage.getItem('mmh_email_history') || '[]').slice(0,4);
+    m.innerHTML = `<div style="background:var(--surface);border-radius:var(--r-lg);width:100%;max-width:440px;padding:var(--s-6);box-shadow:var(--shadow-xl);animation:loginRise 300ms var(--ease) backwards">
+      <div style="display:flex;align-items:center;gap:var(--s-3);margin-bottom:var(--s-4)">
+        <div style="width:42px;height:42px;background:#3A5CAA;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;color:#FFE100">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <div style="font-size:16px;font-weight:800;color:var(--text)">Gửi báo cáo qua email</div>
+          <div style="font-size:12px;color:var(--text-muted)">${escapeHtml(kindLabel||'Báo cáo')} kèm PDF + Excel</div>
+        </div>
+      </div>
+      <label style="display:block;font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px">Email người nhận</label>
+      <input id="email-prompt-input" type="email" placeholder="email@example.com" value="${escapeAttr(defaultEmail||'')}" style="width:100%;padding:12px 14px;background:var(--surface-2);border:1.5px solid var(--border);border-radius:var(--r-md);color:var(--text);font-size:14px;outline:none;font-family:inherit" autofocus>
+      ${hist.length ? '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">' + hist.map(e => '<button type="button" class="btn btn-ghost btn-sm" style="font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" onclick="document.getElementById(\'email-prompt-input\').value=\''+escapeAttr(e)+'\'" title="'+escapeAttr(e)+'">'+escapeHtml(e)+'</button>').join('') + '</div>' : ''}
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:var(--s-5)">
+        <button class="btn btn-ghost" id="email-prompt-cancel">Huỷ</button>
+        <button class="btn btn-primary" id="email-prompt-ok" style="background:#3A5CAA"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Gửi</button>
+      </div>
+    </div>`;
+    document.body.appendChild(m);
+    const input = document.getElementById('email-prompt-input');
+    setTimeout(() => input.focus(), 100);
+    const cleanup = (val) => { m.remove(); resolve(val); };
+    document.getElementById('email-prompt-cancel').onclick = () => cleanup(null);
+    document.getElementById('email-prompt-ok').onclick = () => {
+      const v = (input.value||'').trim();
+      if (!v) { input.style.borderColor='#DC2626'; return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { input.style.borderColor='#DC2626'; toast('warning','Email không hợp lệ',v); return; }
+      const h = JSON.parse(localStorage.getItem('mmh_email_history')||'[]').filter(e=>e!==v);
+      h.unshift(v); localStorage.setItem('mmh_email_history', JSON.stringify(h.slice(0,6)));
+      cleanup(v);
+    };
+    input.onkeydown = (e) => { if(e.key==='Enter')document.getElementById('email-prompt-ok').click(); if(e.key==='Escape')cleanup(null); };
+    m.onclick = (e) => { if(e.target===m)cleanup(null); };
+  });
+}
+
 async function emailSearchReport() {
   if (!CONFIG.appsUrl) { toast('error', 'Chưa cấu hình', 'Cần Apps Script'); return; }
-  if (!CURRENT_USER) { toast('error', 'Chưa đăng nhập', ''); return; }
+  const to = await promptEmailAddress(CURRENT_USER ? CURRENT_USER.email : '', 'Báo cáo tìm kiếm');
+  if (!to) return;
   showLoading('Đang chuẩn bị email + PDF + Excel...');
   try {
     const pdfBase64 = await buildPDFArrayBuffer(buildSearchReportHTML());
@@ -3313,47 +3953,49 @@ async function emailSearchReport() {
     const xlsxBase64 = xlsxToBase64(wb);
     const r = getSearchResults();
     await apiPost('sendReport', {
-      to: CURRENT_USER.email, kind: 'search',
+      to: to, kind: 'search',
       subject: `[MMH Tender] Báo cáo lọc ${new Date().toLocaleDateString('vi-VN')}`,
       pdfBase64, xlsxBase64,
-      filters: { type: $('search-type').value, region: $('search-region').value, from: $('search-from').value, to: $('search-to').value, tags: SEARCH_STATE.tags.map(t => t.name), mmhOnly: isChecked('search-mmh-only') },
+      filters: { type: $('search-type').value, region: $('search-region').value, from: $('search-from').value, to: $('search-to').value, tags: SEARCH_STATE.tags.map(t => t.name), vendor: SEARCH_STATE.vendor||'', mmhOnly: isChecked('search-mmh-only') },
       summary: { kqdt: r.kqdt.length, khmt: r.khmt.length, tbmt: r.tbmt.length }
     });
-    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${CURRENT_USER.email} (PDF + Excel)`);
+    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${to} (PDF + Excel)`);
   } catch (err) { hideLoading(); toast('error', 'Lỗi gửi email', err.message); }
 }
 async function emailDashboardReport() {
   if (!CONFIG.appsUrl) { toast('error', 'Chưa cấu hình', 'Cần Apps Script'); return; }
-  if (!CURRENT_USER) { toast('error', 'Chưa đăng nhập', ''); return; }
+  const to = await promptEmailAddress(CURRENT_USER ? CURRENT_USER.email : '', 'Báo cáo Dashboard');
+  if (!to) return;
   showLoading('Đang chuẩn bị email + PDF + Excel...');
   try {
     const pdfBase64 = await buildPDFArrayBuffer(buildDashboardReportHTML());
     const wb = buildDashboardExcelWB();
     const xlsxBase64 = xlsxToBase64(wb);
     await apiPost('sendReport', {
-      to: CURRENT_USER.email, kind: 'dashboard',
+      to: to, kind: 'dashboard',
       subject: `[MMH Dashboard] Báo cáo ${new Date().toLocaleDateString('vi-VN')}`,
       pdfBase64, xlsxBase64,
       summary: { kqdt: getFilteredKQDT().length, tbmt: getFilteredTBMT().length, khmt: getFilteredKHMT().length }
     });
-    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${CURRENT_USER.email} (PDF + Excel)`);
+    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${to} (PDF + Excel)`);
   } catch (err) { hideLoading(); toast('error', 'Lỗi gửi email', err.message); }
 }
 async function emailWatchReport() {
   if (!CONFIG.appsUrl) { toast('error', 'Chưa cấu hình', 'Cần Apps Script'); return; }
-  if (!CURRENT_USER) { toast('error', 'Chưa đăng nhập', ''); return; }
+  const to = await promptEmailAddress(CURRENT_USER ? CURRENT_USER.email : '', 'Báo cáo Wishlist');
+  if (!to) return;
   showLoading('Đang chuẩn bị email + PDF + Excel...');
   try {
     const pdfBase64 = await buildPDFArrayBuffer(buildWatchReportHTML());
     const wb = buildWatchExcelWB();
     const xlsxBase64 = xlsxToBase64(wb);
     await apiPost('sendReport', {
-      to: CURRENT_USER.email, kind: 'watchlist',
+      to: to, kind: 'watchlist',
       subject: `[MMH Wishlist] Báo cáo ${new Date().toLocaleDateString('vi-VN')}`,
       pdfBase64, xlsxBase64,
       summary: { matches: computeWatchMatches().length, investors: WATCH_STATE.investors.length, keywords: WATCH_STATE.keywords.length }
     });
-    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${CURRENT_USER.email} (PDF + Excel)`);
+    hideLoading(); toast('success', '✓ Email đã gửi', `Tới ${to} (PDF + Excel)`);
   } catch (err) { hideLoading(); toast('error', 'Lỗi gửi email', err.message); }
 }
 
@@ -3392,15 +4034,15 @@ function initApp() {
     $('connect-url').value = overridden || '';
   }
   if ($('t-autorefresh')) $('t-autorefresh').classList.toggle('on', CONFIG.autoRefreshEnabled);
-  setDashTimePreset('m6', document.querySelector('#page-dashboard .time-chip:nth-child(5)'));
-  setSearchTimePreset('m1', document.querySelector('#page-search .time-chip:nth-child(3)'));
+  try { setDashTimePreset('m6', document.querySelector('#page-dashboard .time-chip:nth-child(5)')); } catch(e) { console.warn('setDashTimePreset:', e); }
+  try { setSearchTimePreset('m1', document.querySelector('#page-search .time-chip:nth-child(3)')); } catch(e) { console.warn('setSearchTimePreset:', e); }
   // Silent version check
   apiGet('health').then(r => {
     if (r.ok) {
       BACKEND_VERSION = r.version || '?';
-      const ok = BACKEND_VERSION === '3.2' || BACKEND_VERSION === '3.3';
+      const ok = ['3.2','3.3','3.4','3.5'].includes(BACKEND_VERSION);
       if (!ok) {
-        setTimeout(() => toast('warning', '⚠ Apps Script cần update', `Backend v${BACKEND_VERSION} đã cũ. Update lên v3.2+ để fix lỗi email và wishlist.`), 1500);
+        setTimeout(() => toast('warning', '⚠ Apps Script cần update', `Backend v${BACKEND_VERSION} đã cũ. Cần v3.4+.`), 1500);
       }
     }
   }).catch(() => {});
@@ -3434,18 +4076,41 @@ function initApp() {
   setTimeout(() => toast('success', 'Chào ' + (CURRENT_USER ? CURRENT_USER.name : '') + '! 👋', `MMH Tender ${APP_VERSION} sẵn sàng`), 600);
 }
 window.addEventListener('load', () => {
-  const u = localStorage.getItem('mmh_user');
-  if (u) {
+  // v3.5: Tự động vào thẳng app, không cần đăng nhập
+  // Xóa cached URL cũ để dùng APPS_URL_HARDCODED mới
+  try { 
+    const cachedUrl = localStorage.getItem('mmh_apps_url');
+    if (cachedUrl && !cachedUrl.includes('AKfycbwv3R7')) {
+      localStorage.removeItem('mmh_apps_url');
+      console.log('Cleared old cached Apps URL');
+    }
+  } catch(e) {}
+  try {
+    const u = localStorage.getItem('mmh_user');
+    if (u) {
+      try { CURRENT_USER = JSON.parse(u); } catch (e) { CURRENT_USER = null; }
+    }
+    if (!CURRENT_USER || !CURRENT_USER.email) {
+      CURRENT_USER = { email: 'mmh.user@manimedicalhanoi.com', name: 'MMH User' };
+      try { localStorage.setItem('mmh_user', JSON.stringify(CURRENT_USER)); } catch(e){}
+    }
+    const uName = $('user-name'); if (uName) uName.textContent = CURRENT_USER.name;
+    const uEmail = $('user-email'); if (uEmail) uEmail.textContent = CURRENT_USER.email;
+    const uAvatar = $('user-avatar'); if (uAvatar) uAvatar.textContent = (CURRENT_USER.name || 'M').split(' ').slice(0, 2).map(w => w.charAt(0)).join('').toUpperCase() || 'M';
+    try { loadWatchState(); } catch(e) { console.warn('loadWatchState error:', e); }
+    const loginEl = $('login-screen'); if (loginEl) loginEl.classList.add('hidden');
+    const appEl = $('app'); if (appEl) appEl.classList.remove('hidden');
+    initApp();
+  } catch(err) {
+    console.error('MMH load error:', err);
+    // Fallback: force hide login, show app anyway
     try {
-      CURRENT_USER = JSON.parse(u);
-      $('user-name').textContent = CURRENT_USER.name;
-      $('user-email').textContent = CURRENT_USER.email;
-      $('user-avatar').textContent = CURRENT_USER.name.split(' ').slice(0, 2).map(w => w.charAt(0)).join('').toUpperCase();
-      loadWatchState();
-      $('login-screen').classList.add('hidden');
-      $('app').classList.remove('hidden');
+      const ls = document.getElementById('login-screen');
+      const ap = document.getElementById('app');
+      if (ls) ls.style.display = 'none';
+      if (ap) { ap.style.display = 'flex'; ap.classList.remove('hidden'); }
       initApp();
-    } catch (e) { /* fall to login */ }
+    } catch(e2) { console.error('Fallback also failed:', e2); }
   }
 });
 </script></body></html>
